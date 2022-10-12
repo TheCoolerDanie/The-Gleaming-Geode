@@ -49,18 +49,22 @@
 <body class="rock0">
     <h1 class="rock1" style="width: 250px; padding-left: 35px;"> Register </h1>
     <form>
+      <div class="mb-3 rocklog">
+        <label for="username" class="required-label">Username</label>
+        <input type="username" class="form-control" id="username" aria-describedby="usernameHelp">
+      </div>
         <div class="mb-3 rocklog">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="Email" class="required-label">Email address</label>
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text" style="color: rgb(142, 42, 94);">We'll probably share your email with people.</div>
         </div>
         <div class="mb-3 rocklog">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <label for="Password" class="required-label">Password</label>
              <div id="emailHelp" class="form-text" style="color: rgb(142, 42, 94);">Password must be 8-20 characters long.</div>
-             <input type="password" class="form-control" id="exampleInputPassword1">
+             <input type="password" class="form-control" id="Password">
 
-            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-             <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="Password" class="required-label">Confirm Password</label>
+             <input type="password" class="form-control" id="Password">
           </div>
             </div>
           </div>
@@ -68,8 +72,26 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Do you want us to send updates to your email?</label>
         </div>
+        
+        <ul class="list-group rocklog">
+          <li class="list-group-item">
+            <label class="form-check-label" for="firstRadio">How did you hear about us?</label>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Friend</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+            <label class="form-check-label" for="secondRadio">Online</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+            <label class="form-check-label" for="thirdRadio">It came to me in a dream</label>
+          </li>
+        </ul>
         <button type="submit" class="btnrock">Create Account</button>
       </form>
       <a class="btnrock" href="login.html" role="button">Already have an account? Log in here</a>
+      
 </body>
 </html>
